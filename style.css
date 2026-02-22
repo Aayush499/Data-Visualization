@@ -1,0 +1,56 @@
+body { 
+    font-family: sans-serif; 
+    text-align: center; 
+}
+
+#chart-container { 
+    position: relative; 
+    display: inline-block; 
+    margin-top: 20px; 
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    font-size: 14px;
+    transition: opacity 0.2s;
+    z-index: 1000;
+}
+
+/* Mini Line Chart Styling */
+.sparkline {
+    fill: none;
+    stroke-width: 1.5px;
+    opacity: 0.8;
+}
+
+/* Toggle Button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button:hover { 
+    background-color: #45a049; 
+}
+
+text { 
+    font-size: 12px; 
+    fill: #333; 
+}
+
+.domain, .tick line { 
+    stroke: #ccc; 
+}
